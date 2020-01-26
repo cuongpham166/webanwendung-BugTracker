@@ -1,0 +1,86 @@
+<!-- Template -->
+<!-- Contentbereich -->
+<div class="Titel">
+   <h2>Titel</h2>
+</div>
+
+<div class="Main">
+   <div class="divTable">
+      <div class="divTableBody">
+         <div class="divTableRow">
+            <div class="divTableCell1">ID-Projekt</div>
+            <div class="divTableCell1">Name-Projekt</div>
+            <div class="divTableCell1">ID-Komponente</div>
+            <div class="divTableCell1">Name-Komponente</div>
+            <div class="divTableCell1">ID-Fehler</div>
+            <div class="divTableCell1">Name-Fehler</div>
+            <div class="divTableCell1">Status</div>
+         </div>
+            @var entry_b;@
+            @var entry_a;@
+            @var loop_i;@
+            @for loop_i = 0; loop_i < context.length; loop_i++@
+            @entry_a = context[loop_i];@
+         <div class="divTableRow"  id="#entry_a['id']#">
+            <div class="divTableCell"><p>#entry_a['id']#</p></div>
+            <div class="divTableCell"><p>#entry_a['Name']#</p></div>
+
+            @if(entry_a['Komponente'])@ 
+              
+            <div class="divTableCell">
+               @var entry_a;@
+               @var i;@
+               @var i; @
+               @for i = 0; i < entry_a['Komponente'].length; i++@
+               <p>#entry_a['Komponente'][i]['id']#</p>
+               @endfor@
+            </div> 
+
+             <div class="divTableCell">
+               @var entry_a;@
+               @var i;@
+               @var i; @
+               @for i = 0; i < entry_a['Komponente'].length; i++@
+               <p>#entry_a['Komponente'][i]['Name']#</p>
+               @endfor@
+            </div> 
+            @endif@
+            @if(entry_a['Fehler'])@
+            <div class="divTableCell">
+               @var entry_a;@
+               @var i;@
+               @var i; @
+               @for i = 0; i < entry_a['Fehler'].length; i++@
+               <p>#entry_a['Fehler'][i]['id']#</p>
+               @endfor@
+            </div> 
+
+            <div class="divTableCell">
+               @var entry_a;@
+               @var i;@
+               @var i; @
+               @for i = 0; i < entry_a['Fehler'].length; i++@
+               <p>#entry_a['Fehler'][i]['Name']#</p>
+               @endfor@
+            </div> 
+
+            <div class="divTableCell">
+               @var entry_a;@
+               @var i;@
+               @var i; @
+               @for i = 0; i < entry_a['Fehler'].length; i++@
+               <p>#entry_a['Fehler'][i]['Status']#</p>
+               @endfor@
+            </div> 
+
+            
+
+            
+            @endif@
+         </div>
+            @endfor@
+      </div>
+   </div>
+</div>
+
+<!-- EOF -->

@@ -1,0 +1,36 @@
+<div class="Titel">
+    <h2>Mitarbeiter Form</h2>
+</div>
+
+<div class="Main">
+    <form>
+    <div>
+        <label for="id"></label>
+        <input type="hidden" id="id" name="id"  value="#context['id']#" />
+    </div>
+    <div>
+        <label for="Name">Name </label>
+        <input type="text" id="Name" class="input" name="Name" value="#context['Name']#" />
+    </div>
+    <div>
+        <label for="Email">Username</label>
+        <input type="text" id="Email" name="Email" class="input" value="#context['Email']#"/>
+    </div>
+    <div>
+        <label for="Password"> Password</label>
+        <input type="text" name="Password" id="Password" class="input" value="#context['Password']#"/>
+
+    </div>
+    <div>
+        <label for="Titel">Titel</label>
+        <select id ="Titel" name ="Titel">
+            <option value="QS-Mitarbeiter">QS-Mitarbeiter</option>
+        </select>
+    </div>
+    
+     <div id="idButtonArea" class="clButtonArea Schalter_form">
+        <button id="idBack_mitarbeiter" class="btn btn-1 btn-1a">Zurück</button>
+        <button id ="idSave_mitarbeiter" class="btn btn-1 btn-1a">Speichern</button>
+    </div>
+</form>
+</div>

@@ -1,0 +1,28 @@
+<!-- Template -->
+<!-- Contentbereich -->
+<div class="Titel">
+   <h2>Projekte List</h2>
+</div>
+<div class="Main">
+<table>
+   <tr>
+      <th>ID</th>
+      <th>Name</th>
+   </tr>
+   @var entry_a;@
+   @var loop_i;@
+   @for loop_i = 0; loop_i < context.length; loop_i++@
+      @entry_a = context[loop_i];@
+      <tr id="#entry_a['id']#">
+         <td>#entry_a['id']#</td>
+         <td>#entry_a['Name']#</td>
+      </tr>
+   @endfor@
+</table>
+</div>
+<div class="Schalter">
+<button id="idShowListEntry_projekt" class="btn btn-1 btn-1a">Anzeigen</button>
+<button id="idDelete_projekt" class="btn btn-1 btn-1a">Löschen</button>
+<button id="idAnlegen_projekt" class="btn btn-1 btn-1a">Anlegen</button>
+</div>
+<!-- EOF -->

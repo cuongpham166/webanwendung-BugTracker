@@ -1,0 +1,27 @@
+<div class="Titel">
+    <h2> entwichler Anmeldung</h2>
+</div>
+
+<div class="Main">
+    <form>
+        
+        <div>
+            <label for="Arbeiter"></label>
+            <input type="hidden" id="Arbeiter" class="input" name="Arbeiter"  value="#context['id']#">
+        </div>
+
+        <div>
+            <label for="Email"></label>
+            <input type="text" id="Email" class="input" name="Email" placeholder="Username" value="#context['Email']#">
+        </div>
+        <div>
+            <label for="Password"></label>
+            <input type="text" id="Password" class="input" name="Password" placeholder="Password" value="#context['Password']#" >
+        </div>
+        <div ><p id ="failed"></p> </div>
+        <div id="idButtonArea" class="clButtonArea Schalter_form">
+            <button id ="idSave_anmeldung" class="btn btn-1 btn-1a">Anmelden</button>
+            <button id="idBack_fehler1" class="btn btn-1 btn-1a">Zurück</button>
+        </div>
+    </form>
+</div>

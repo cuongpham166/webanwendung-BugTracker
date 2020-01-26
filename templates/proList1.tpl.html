@@ -1,0 +1,34 @@
+<div class="Main">
+<table>
+   <tr>
+      <th>ID-Projekt</th>
+      <th>Name-Projekt</th>
+      <th>ID-Komponente</th>
+      <th>Name-Komponente</th>
+      <th>ID-Fehler</th>
+      <th>Name-Fehler</th>
+      <th>Status</th>
+   </tr>
+    
+   @var entry_b;@
+   @var entry_a;@
+   @var loop_i;@
+   @for loop_i = 0; loop_i < context.length; loop_i++@
+      @entry_a = context[loop_i];@
+      <tr id="#entry_a['id']#">
+      <td>#entry_a['id']#</td>
+      <td>#entry_a['Name']#</td>
+      @if(entry_a['Komponente'])@
+         @var i; @
+         @for i = 0; i < entry_a['Komponente'].length; i++@
+            <td>#entry_a['Komponente'][i]['id']#</td>
+            <td>#entry_a['Komponente'][i]['Name']#</td>
+            <td>#entry_a['Komponente'][i]['FehlerID']#</td>
+            <td>#entry_a['Komponente'][i]['Fehler_Name']#</td>
+            <td>#entry_a['Komponente'][i]['Status']#</td>    
+         @endfor@
+      @endif@
+      </tr>
+   @endfor@
+</table>
+</div>

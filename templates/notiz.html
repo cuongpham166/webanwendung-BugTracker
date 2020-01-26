@@ -1,0 +1,21 @@
+<table>
+   <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Komponente ID</th>
+   </tr>
+   @var entry_a;@
+   @var loop_i;@
+   @for loop_i = 0; loop_i < context.length; loop_i++@
+      @entry_a = context[loop_i];@  
+      @if (entry_a['Status'] == "erkannt")@
+      <tr id="#entry_a['id']#">
+         <td>#entry_a['id']#</td>
+         <td>#entry_a['Name']#</td>
+         <td>#entry_a['Status']#</td>
+         <td>#entry_a['komponenteID']#</td>
+      </tr>
+      @endif@
+   @endfor@
+</table>

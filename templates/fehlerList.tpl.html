@@ -1,0 +1,52 @@
+<!-- Template -->
+<!-- Contentbereich -->
+<div class="Titel">
+   <h2>Fehler List</h2>
+</div>
+
+<div class="Main1">
+   <table>
+   <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Komponente ID</th>
+      <th>Mitarbeiter ID</th>
+      <th>Datum</th>
+      <th>Zeit (Anfang)</th>
+      <th>Zeit (Ende)</th>
+      <th>Zeit (Differenz)</th>
+   </tr>
+   @var entry_a;@
+   @var loop_i;@
+   @for loop_i = 0; loop_i < context.length; loop_i++@
+      @entry_a = context[loop_i];@
+      <tr id="#entry_a['id']#">
+         <td>#entry_a['id']#</td>
+         <td>#entry_a['Name']#</td>
+         <td>#entry_a['Status']#</td>
+         <td>#entry_a['komponenteID']#</td>
+         <td>#entry_a['mitID']#</td>
+         <td>#entry_a['Date']#</td>
+         <td>#entry_a['anZeit']#</td>
+         <td>#entry_a['enZeit']#</td>
+         <td>#entry_a['difZeit']#</td>
+      </tr>
+   @endfor@
+</table>
+</div>
+
+
+<div class="Schalter1">
+   <button id="idShowListEntry_fehler" class="btn btn-1 btn-1a">SW-Entwickler</button>
+   <button id="idDelete_fehler" class="btn btn-1 btn-1a">Löschen</button>
+   <button id="idAnlegen_fehler" class="btn btn-1 btn-1a">QS-Mitarbeiter</button>
+   <div>
+      <button id="idShowList_erkannterfehler" class="btn btn-1 btn-1a">erkannte Fehler</button>
+      <button id="idShowList_behobenerfehler" class="btn btn-1 btn-1a">behobene Fehler</button>
+   </div>
+</div>
+
+<!-- EOF -->
+
+

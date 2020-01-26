@@ -1,0 +1,36 @@
+<!-- Template -->
+<!-- Contentbereich -->
+<div class ="Titel">
+   <h2>Kategorie List</h2>
+</div>
+
+<div class="Main">
+   <div class="divTable">
+      <div class="divTableBody">
+         <div class="divTableRow">
+            <div class="divTableCell1">ID</div>
+            <div class="divTableCell1">Name</div>
+            <div class="divTableCell1">Type</div>
+         </div>
+             @var entry_a;@
+            @var loop_i;@
+            @for loop_i = 0; loop_i < context.length; loop_i++@
+            @entry_a = context[loop_i];@
+         <div class="divTableRow" id="#entry_a['id']#">
+            <div class="divTableCell"><p>#entry_a['id']#</p></div>
+            <div class="divTableCell"><p>#entry_a['Name']#</p></div>
+            <div class="divTableCell"><p>#entry_a['Type']#</p></div>
+         </div>
+            @endfor@
+      </div>
+   </div>
+</div>
+
+<div class="Schalter">
+   <button id="idShowList_katfehker" class="btn btn-1 btn-1a">Kategorie Fehler</button>
+   <button id="idShowList_katursache" class="btn btn-1 btn-1a">Kategorie Ursache</button>
+</div>
+
+<!-- EOF -->
+
+

@@ -1,0 +1,38 @@
+<div class="Titel">
+    <h2>Kategorie Ursache Form</h2>
+</div>
+
+<div class="Main">
+    <form>
+    <div>
+        <label for="id"></label>
+        <input type="hidden" id="id" name="id"  value="#context['id']#" />
+    </div>
+    <div>
+        <label for="katfehlerName">Name </label>
+        <input type="text" id="katfehlerName" class="input" name="katfehlerName" value="#context['katfehlerName']#" />
+    </div>
+    <div>
+        <label for="Type">Type</label>
+        <select id ="Type" name ="Type">
+            <option value="Kategorie Ursache">Kategorie Ursache</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="fehlerID">behobene Fehler-ID</label>
+        <select id="fehlerID" name="fehlerID">
+            @var entry_b;@
+            @for loop_i = 0; loop_i < context['fehlerID'].length; loop_i++@
+                @entry_b = context['fehlerID'][loop_i];@
+                 <option value="#entry_b#">#entry_b# </option>
+             @endfor@
+        </select>
+    </div>
+
+     <div id="idButtonArea" class="clButtonArea Schalter_form">
+        <button id="idBack_katursache" class="btn btn-1 btn-1a">Zurück</button>
+        <button id ="idSave_katursache" class="btn btn-1 btn-1a">Speichern</button>
+    </div>
+</form>
+</div>

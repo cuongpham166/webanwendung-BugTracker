@@ -1,0 +1,29 @@
+<div class="Titel">
+	<h2>Titel</h2>
+</div>
+
+<div class="Main">
+	<div class="divTable">
+		<div class="divTableBody">
+			<div class="divTableRow">
+				<div class="divTableCell1">Fehler-ID</div>
+				<div class="divTableCell1">Fehler-Name</div>
+				<div class="divTableCell1">Kategorie Fehler-ID</div>
+				<div class="divTableCell1">Kategorie Fehler-Name</div>
+				<div class="divTableCell1">Status</div>
+			</div>
+				@var entry_a;@
+   				@var loop_i;@
+  		 		@for loop_i = 0; loop_i < context.length; loop_i++@
+  		 		@entry_a = context[loop_i];@
+  		 	<div class="divTableRow" id="#entry_a['id']#">
+  		 		<div class="divTableCell"><p>#entry_a['fehlerID']#</p></div>
+  		 		<div class="divTableCell"><p>#entry_a['fehlerName']#</p></div>
+  		 		<div class="divTableCell"><p>#entry_a['katfehlerID']#</p></div>
+  		 		<div class="divTableCell"><p>#entry_a['katfehlerName']#</p></div>
+  		 		<div class="divTableCell"><p>#entry_a['Status']#</p></div>
+  		 	</div>
+  		 		@endfor@
+		</div>
+	</div>
+</div>

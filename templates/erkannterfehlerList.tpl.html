@@ -1,0 +1,33 @@
+<!-- Template -->
+<!-- Contentbereich -->
+<div class="Titel">
+   <h2>erkannte Fehler List</h2>
+</div>
+<div class="Main">
+   <div class="divTable">
+      <div class="divTableBody">
+         <div class="divTableRow">
+            <div class="divTableCell1">ID</div>
+            <div class="divTableCell1">Name</div>
+            <div class="divTableCell1">Status</div>
+            <div class="divTableCell1">Komponente ID</div>
+         </div>
+            @var entry_a;@
+            @var loop_i;@
+            @for loop_i = 0; loop_i < context.length; loop_i++@
+            @entry_a = context[loop_i];@  
+            @if (entry_a['Status'] == "erkannt")@
+         <div class="divTableRow" id="#entry_a['id']#">
+            <div class="divTableCell"><p>#entry_a['id']#</p></div>
+            <div class="divTableCell"><p>#entry_a['Name']#</p></div>
+            <div class="divTableCell"><p>#entry_a['Status']#</p></div>
+            <div class="divTableCell"><p>#entry_a['komponenteID']#</p></div>
+         </div>
+          @endif@
+            @endfor@
+      </div>
+   </div>
+</div>
+<div class="Schalter">
+   <button id="idBack_fehler1" class="btn btn-1 btn-1a">Zurück</button>
+</div>

@@ -1,0 +1,39 @@
+<!-- Template -->
+<!-- Contentbereich -->
+<div class="Titel">
+   <h2>SW-Entwickler</h2>
+</div>
+
+<div class="Main">
+   <table>
+   <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Titel</th>
+      <th>Username</th>
+      <th>Password</th>
+   </tr>
+   @var entry_a;@
+   @var loop_i;@
+   @for loop_i = 0; loop_i < context.length; loop_i++@
+      @entry_a = context[loop_i];@
+      <tr id="#entry_a['id']#">
+         <td>#entry_a['id']#</td>
+         <td>#entry_a['Name']#</td>
+         <td>#entry_a['Titel']#</td>
+         <td>#entry_a['Email']#</td>
+         <td>#entry_a['Password']#</td>
+      </tr>
+   @endfor@
+</table>
+</div>
+
+
+<div class="Schalter">
+   <button id="idShowListEntry_entwickler" class="btn btn-1 btn-1a">Anzeigen</button>
+   <button id="idDelete_entwickler" class="btn btn-1 btn-1a">Löschen</button>
+   <button id="idAnlegen_entwickler" class="btn btn-1 btn-1a">Anlegen</button>
+   <button id="idBack_arbeiter" class="btn btn-1 btn-1a">Zurück</button>
+</div>
+
+<!-- EOF -->

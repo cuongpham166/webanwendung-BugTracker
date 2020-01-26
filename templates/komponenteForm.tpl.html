@@ -1,0 +1,30 @@
+<div class="Titel">
+    <h2>Komponente Form</h2>
+</div>
+
+<div class="Main">
+    <form>
+    <div>
+        <label for="id"></label>
+        <input type="hidden" id="id" name="id"  value="#context['id']#" />
+    </div>
+    <div>
+        <label for="Name">Name </label>
+        <input type="text" id="Name" class="input" name="Name" value="#context['Name']#" />
+    </div>
+    <div>
+        <label for="projektID">ProjektID</label>
+        <select id="projektID" name="projektID">
+            @var entry_b;@
+            @for loop_i = 0; loop_i < context['projektID'].length; loop_i++@
+                @entry_b = context['projektID'][loop_i];@
+                 <option value="#entry_b#">#entry_b# </option>
+             @endfor@
+        </select>
+    </div>
+     <div id="idButtonArea" class="clButtonArea Schalter_form">
+        <button id="idBack_komponente" class="btn btn-1 btn-1a">Zurück</button>
+        <button id ="idSave_komponente" class="btn btn-1 btn-1a">Speichern</button>
+    </div>
+</form>
+</div>

@@ -1,0 +1,33 @@
+<!-- Template -->
+<!-- Contentbereich -->
+<div class="Titel">
+   <h2>Kategorie Fehler List</h2>
+</div>
+
+<div class="Main">
+   <table>
+   <tr>
+      <th>ID</th>
+      <th>erkannte Fehler ID</th>
+      <th>Kategorie Fehler ID</th>
+   </tr>
+   @var entry_a;@
+   @var loop_i;@
+   @for loop_i = 0; loop_i < context.length; loop_i++@
+      @entry_a = context[loop_i];@
+      <tr id="#entry_a['id']#">
+         <td>#entry_a['id']#</td>
+         <td>#entry_a['fehlerID']#</td>
+         <td>#entry_a['katfehlerID']#</td>
+      </tr>
+   @endfor@
+</table>
+</div>
+
+<div class="Schalter">
+<button id="idShowListEntry_kategoriefehler" class="btn btn-1 btn-1a">Anzeigen</button>
+<button id="idDelete_kategoriefehler" class="btn btn-1 btn-1a">Löschen</button>
+<button id="idAnlegen_kategoriefehler" class="btn btn-1 btn-1a">Anlegen</button>
+<button id="idBack_kategoriefehler" class="btn btn-1 btn-1a">Zurück</button>
+</div>
+<!-- EOF -->

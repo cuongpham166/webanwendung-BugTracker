@@ -1,0 +1,295 @@
+/* einfaches Layout fuer Demonstrator */
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   background: #330136;
+}
+
+header {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   height: 100px;
+   background-color:#5E1742;
+   color: white;
+}
+aside {
+   position: absolute;
+   top: 100px;
+   left: 0;
+   width: 200px;
+   bottom: 00px;
+   background-color: #962E40;
+   color: #5E1742;
+}
+
+footer {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 100px;
+   background-color: white;
+   color: white;
+}
+footer p {
+   text-align: center;
+}
+
+
+.clSelected {
+   background-color:#630136;
+   color: white;
+}
+
+form label {
+   display: block;
+   width: 200px;
+}
+form input {
+   display: block;
+   width: 300px;
+}
+form button {
+   display: block;
+}
+/* EOF */
+
+a{
+   color:white;
+   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1{
+   text-align: center;
+   text-transform: uppercase;
+}
+h3{
+  color:white;
+  text-align: right;
+}
+ th{
+  padding: 20px 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  color:white;
+}
+p{
+   color: white;
+}
+
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 18px;
+  color:white;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+  text-align: center
+}
+
+.Schalter{
+   position: absolute;
+   left: 200px;
+   right: 00px;
+   bottom: 000px;
+   height: 100px;
+   background-color:#C9463D;
+   text-align: center;
+}
+
+.Schalter_form{
+   position: absolute;
+   left: 000px;
+   right: 00px;
+   bottom: 000px;
+   height: 100px;
+   background-color:#C9463D;
+   text-align: center;
+   top:730px;
+}
+
+.Schalter1{
+   position: absolute;
+   left: 200px;
+   right: 00px;
+   bottom: 000px;
+   height: 205px;
+   background-color:#C9463D;
+   text-align: center;
+}
+
+.Titel{
+   position: absolute;
+   background-color:#C9463D;
+   left: 200px;
+   right: 00px;
+   color:white;
+   top:100px;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+.Main table{
+   text-align: center;
+
+}
+
+.Main{
+   text-align: center;
+   position: absolute;
+   top:160px;
+   left:200px;
+   right:0;
+   bottom:100px;
+}
+
+.Main1{
+   text-align: center;
+   position: absolute;
+   top:160px;
+   left:200px;
+   right:0;
+   bottom:230px;
+}
+
+.btn {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: #5E1742;
+    background: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    transition: all 0.3s;
+    background-color:#962E40;
+}
+
+.btn-1a:hover, .btn-1a:active {
+    color: white;
+    background: #5E1742;
+}
+.btn-1 {
+    border: 3px solid #330136;
+    color: #fff;
+}
+
+
+.input{
+  border:none;
+  outline:none;
+  display:inline-block;
+  height:34px;
+  vertical-align:middle;
+  bottom:14px;
+  right:9px;
+  border-radius:22px;
+  width:220px;
+  box-sizing:border-box;
+  padding:0 18px; 
+  margin-bottom: 20px;
+}
+
+label{
+  color: white;
+}
+
+select{
+    border:none;
+  outline:none;
+  display:inline-block;
+  height:34px;
+  vertical-align:middle;
+  position:relative;
+  bottom:14px;
+  right:9px;
+  border-radius:22px;
+  width:220px;
+  box-sizing:border-box;
+  padding:0 18px; 
+  margin-bottom: 20px;
+}
+
+.divTable{
+   display: table;
+    text-align: center;
+    width: 60%;
+    margin: 10% auto 0;
+    border-collapse: separate;
+    font-weight: 400;
+    border-style: none;
+   }
+.divTableRow {
+  display: table-row;
+}
+.divTableHeading {
+  background-color: #EEE;
+  display: table-header-group;
+}
+.divTableCell, .divTableHead {
+  border: 1px solid #330136;
+  display: table-cell;
+  padding: 3px 10px;
+  color:white;
+  font-size: 20px;
+  background-color: #962E40;
+
+}
+.divTableHeading {
+  background-color: #EEE;
+  display: table-header-group;
+  font-weight: bold;
+}
+.divTableFoot {
+  background-color: #EEE;
+  display: table-footer-group;
+  font-weight: bold;
+}
+.divTableBody {
+  display: table-row-group;
+}
+
+.divTableCell1{
+  border: 1px solid #330136;
+  display: table-cell;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  background-color: #5E1742;
+  color: white;
+  font-size: 20px;
+
+}
+
+table{
+  display: table;
+text-align: center;
+width: 60%;
+margin: 10% auto 0;
+border-collapse: separate;
+font-weight: 400;
+border-style: none;
+}
+
+form{
+  text-align: center;
+}
